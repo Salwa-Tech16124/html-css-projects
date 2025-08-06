@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fdf497 0%, #fd5949 50%, #d6249f 100%);
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d6249f;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #d6249f;
+}
+
+main {
+  padding: 2rem;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-content {
+  padding: 1rem;
+}
+
+.blog-content h2 {
+  color: #d6249f;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Hide the checkbox input */
+.read-toggle {
+  display: none;
+}
+
+/* Initially hide the extra text */
+.more-text {
+  display: none;
+}
+
+/* Show the extra text when checkbox is checked */
+.read-toggle:checked + p .more-text {
+  display: inline;
+}
+
+/* Read More / Read Less button style */
+.read-more-label {
+  color: #d6249f;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+}
+
+.read-toggle:not(:checked) + p + .read-more-label::after {
+  content: "Read more";
+}
+
+.read-toggle:checked + p + .read-more-label::after {
+  content: "Read less";
+}
+
+/* Author styling */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.author img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Icons section */
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  color: #444;
+}

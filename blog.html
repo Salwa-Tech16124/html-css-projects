@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Blog Style</title>
+  <link rel="stylesheet" href="m.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">InstaBlog</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog-container">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="nature.avif" alt="Nature" class="blog-image" />
+        <div class="blog-content">
+          <h2>Nature's Beauty</h2>
+          <input type="checkbox" id="read1" class="read-toggle">
+          <p>
+            Explore the serenity of forests and mountains... 
+            <span class="more-text">Nature connects you to peace. Whether it’s the calm of trees swaying in the wind or the rhythmic sound of a stream, nature heals the soul.</span>
+          </p>
+          <label for="read1" class="read-more-label"></label>
+          
+          <div class="meta-info">
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Author">
+              <span>by Blair George</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="tech.webp" alt="Tech" class="blog-image" />
+        <div class="blog-content">
+          <h2>Tech Trends 2025</h2>
+          <input type="checkbox" id="read2" class="read-toggle">
+          <p>
+            What's coming in AI, Web3, and beyond? 
+            <span class="more-text">AI is transforming industries, and Web3 promises decentralization. Stay ahead with breakthroughs in edge computing, neural networks, and ethical AI.</span>
+          </p>
+          <label for="read2" class="read-more-label"></label>
+
+          <div class="meta-info">
+            <div class="author">
+              <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Author">
+              <span>by Robert Salvadore</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-regular fa-comment"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 InstaBlog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
